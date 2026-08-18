@@ -1,9 +1,7 @@
-FROM diegosouzapw/omniroute:latest
+FROM docker.litellm.ai/berriai/litellm:main-latest
 
-ENV NODE_ENV=production
-ENV PORT=20128
-ENV HOSTNAME=0.0.0.0
-ENV API_PORT=20128
-ENV API_HOST=0.0.0.0
+COPY config.yaml /app/config.yaml
 
-EXPOSE 20128
+EXPOSE 4000
+
+CMD ["--config", "/app/config.yaml", "--host", "0.0.0.0", "--port", "4000"]
