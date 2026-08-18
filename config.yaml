@@ -1,0 +1,9 @@
+model_list:
+  - model_name: quiz-model
+    litellm_params:
+      model: openai/YOUR_MODEL
+      api_key: os.environ/AI_API_KEY
+      api_base: os.environ/AI_BASE_URL
+
+litellm_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
