@@ -2,7 +2,7 @@
   "name": "omniroute-cloud",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx omniroute --port $PORT --no-open --log"
+    "start": "npx omniroute --port 10000 --no-open --log"
   },
   "dependencies": {
     "omniroute": "latest"
